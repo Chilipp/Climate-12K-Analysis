@@ -108,9 +108,6 @@ def pytest_runtest_makereport(item, call):
 
     # we only look at actual failing test calls, not setup/teardown
     props = dict(rep.user_properties)
-    import pickle
-    with open('tmp.pkl', 'wb') as f:
-        pickle.dump(rep, f)
     if rep.when == "call" and 'dataSetName' in props:
         props[fixtures_re.sub('', rep.nodeid)] = rep.outcome
         all_reports[props['dataSetName']].update(props)
