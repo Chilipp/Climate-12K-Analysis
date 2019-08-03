@@ -1,0 +1,10 @@
+name: climate12k
+dependencies:
+    - pandas
+    - pyqt  # necessary for lipd...
+    - pip
+    - pytest
+    - pytest-sugar
+    - jupyter
+    - pip:
+        - lipd
