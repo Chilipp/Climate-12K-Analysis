@@ -114,7 +114,20 @@ def pytest_runtest_makereport(item, call):
 def pytest_sessionfinish(session):
     """Export the results to Excel"""
     df = pd.DataFrame(all_reports).T.sort_index()
-    df.to_excel(osp.join(data_dir, 'results.xlsx'))
+    df.index.names = ['dataSetName', 'TSid']
+    general = df.loc[df.index.get_level_values(1).isnull()]
+    TS_specific = df.loc[df.index.get_level_values(1).notnull()].reset_index(
+        level=1).copy(True)
+
+    general.index = general.index.droplevel(1)
+    del general['dataSetName']
+
+    cols = general.columns[general.notnull().any()]
+
+    TS_specific.loc[general.index, cols] = general[cols]
+    TS_specific.set_index('TSid', append=True, inplace=True)
+
+    TS_specific.to_excel(osp.join(data_dir, 'results.xlsx'))
 
 
 @pytest.fixture
