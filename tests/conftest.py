@@ -9,11 +9,16 @@ import pandas as pd
 import numpy as np
 import re
 
-import pytest_sugar
 
-
-# avoid terminal output since we run a lot of tests
-pytest_sugar.THEME['symbol_passed'] = ''
+# hide terminal output for passed tests because we are running a lot of them.
+# We cannot use pytest-sugar.conf here because the value would be changed
+# to None
+try:
+    import pytest_sugar
+except ImportError:
+    pass
+else:
+    pytest_sugar.THEME['symbol_passed'] = ''
 
 
 base = osp.abspath(osp.dirname(__file__))
@@ -115,6 +120,7 @@ def pytest_sessionfinish(session):
     """Export the results to Excel"""
     df = pd.DataFrame(all_reports).T.sort_index()
     df.index.names = ['dataSetName', 'TSid']
+
     general = df.loc[df.index.get_level_values(1).isnull()]
     TS_specific = df.loc[df.index.get_level_values(1).notnull()].reset_index(
         level=1).copy(True)
@@ -123,6 +129,8 @@ def pytest_sessionfinish(session):
     del general['dataSetName']
 
     cols = general.columns[general.notnull().any()]
+
+    general = general.loc[np.unique(TS_specific.index)]
 
     TS_specific.loc[general.index, cols] = general[cols]
     TS_specific.set_index('TSid', append=True, inplace=True)
