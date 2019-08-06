@@ -1,5 +1,6 @@
 name: climate12k
 dependencies:
+    - python=3.7
     - pandas
     - pyqt  # necessary for lipd...
     - pip
@@ -9,5 +10,7 @@ dependencies:
     - jupyter
     - xlsxwriter
     - xlrd
+    - geopandas
     - pip:
         - lipd
+        - latlon-utils
