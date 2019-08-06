@@ -5,6 +5,9 @@ dependencies:
     - pip
     - pytest
     - pytest-sugar
+    - pytest-html
     - jupyter
+    - xlsxwriter
+    - xlrd
     - pip:
         - lipd
