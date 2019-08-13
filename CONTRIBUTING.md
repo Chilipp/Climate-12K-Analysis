@@ -26,7 +26,7 @@ By participating, you are expected to uphold this code.
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for straditize. Following these guidelines helps 
+This section guides you through submitting a bug report for this repository. Following these guidelines helps 
 maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 Before creating bug reports, please check existing issues and pull requests as you might find out that 
