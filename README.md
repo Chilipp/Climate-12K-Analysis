@@ -1,17 +1,17 @@
-# Climate-12K-Analysis
-Analysis scripts for Climate-12K
+# Climate12K-Analysis
+Analysis scripts for Climate12K
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master)
 
 This repository contains an automated test suite for the Climate12K database
 and several other analysis notebooks. You can run the analysis scripts in this
 repository on a remote server using mybinder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master)
 
 without the need to install anything. Just head over to
 
-https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master
+https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master
 
 The following sections describe the other contents of this repository.
 
@@ -65,5 +65,5 @@ or by following the [instructions to run the tests](tests/README.md).
 We very much welcome your contributions and appreciate any feedback on the
 analysis scripts and tests. Please head over to the
 [contributing guide](CONTRIBUTING.md) and let us know your feedback throug
-a new [issue](https://github.com/Chilipp/Climate-12K-Analysis/issues) or
+a new [issue](https://github.com/Chilipp/Climate12K-Analysis/issues) or
 via mail to [philipp.sommer@unil.ch](mailto:philipp.sommer@unil.ch).

@@ -3,7 +3,7 @@
 ## Running the tests
 You can either run the tests online on a remote server with mybinder.org
 
-https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master?filepath=notebooks/run-climate12k-tests.ipynb
+https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master?filepath=notebooks/run-climate12k-tests.ipynb
 
 or on your local machine. For the latter, make sure you followed the
 [installation instructions for this repository](../README.md#installation).
