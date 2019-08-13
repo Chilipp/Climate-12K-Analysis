@@ -1,99 +1,69 @@
 # Climate-12K-Analysis
 Analysis scripts for Climate-12K
 
-Automated tests are stored in the tests directory. The LiPD data is
-stored in the data directory (**not tracked by git**).
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master)
 
-To download the LiPD files and combine the temperature series, run the
-[get-temperature-data.ipynb](get-temperature-data.ipynb) jupyter notebook
-(see also the installation instructions below).
+This repository contains an automated test suite for the Climate12K database
+and several other analysis notebooks. You can run the analysis scripts in this
+repository on a remote server using mybinder
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master)
+
+without the need to install anything. Just head over to
+
+https://mybinder.org/v2/gh/Chilipp/Climate-12K-Analysis/master
+
+The following sections describe the other contents of this repository.
+
 
 ## Installation
-After having installed [miniconda](https://conda.io/en/latest/miniconda.html),
-create a new environment using the [environment.yml](environment.yml)
-configuration file:
+*Skip this section, if you want to use mybinder.org anyway...*
 
-```bash
-conda env create -f environment.yml
-```
+If you want to run the functionalities in this repository on your local
+computer,  you have to install the necessary dependencies as described in the
+following steps:
 
-and activate it via
-
-```bash
-conda activate climate12k
-```
-
-## Running the tests
-Then download the LiPD database from http://lipdverse.org/globalHolocene/current_version,
-e.g. http://lipdverse.org/globalHolocene/current_version/globalHolocene0_30_1.zip
-and unzip this file to the `data` directory.
-
-Finally, run the tests via
-
-```bash
-pytest tests
-```
-
-This will generate an Excel file in `data/results.xlsx` with a summary of the
-tests. Additionally, you can pass the `--html` option to create a nice looking
-html report:
-
-```bash
-pytest tests --html=data/report.html
-```
-
-These commands run a lot of tests for the invidual time series and you
-can review the outcome in `data/results.xlsx` and `data/report.html`. You can
-also specify a directory different from `data` with the `--lipd-data` option,
-e.g.
-
-```bash
-pytest tests --lipd-data=another-data-directory
-```
-
-`pytest` has a lot of options to select specific tests, e.g. through the `-k`
-option. Please use `pytest -h` to see the available options.
-
-
-### Accepting test failures
-If you  decide, that one test outcome should be accepted and not marked as
-failed, add it's nodeid to a file and pass it to the `pytest` command via the
-`--accepted` option.
-
-Imagine the country test (`test_country`) failed for the `LPDd2a984fe`
-time series in the `AMP112.vanderBilt.2016.lpd` dataset. To accept this
-failure, follow these steps:
-
-1. Look for the `nodeid-tests/test_data.py::test_country` column in
-   `data/results.xlsx`
-2. Get down to the row for `AMP112.vanderBilt.2016` and `LPDd2a984fe`
-3. copy the cell in this column (in our case,
-   `tests/test_data.py::test_country[AMP112.vanderBilt.2016.LPDd2a984fe]`) and
-	paste that into a text file, e.g. `data/accepted.txt`.
-4. Run the tests again while specifying the text file for the `--accepted`
-   option via
+1. Download this repository
+2. Download and install [miniconda](https://conda.io/en/latest/miniconda.html)
+   for your specific operating system (Linux, Windows or OS X)
+3. Create a new conda environment using the [environment.yml](environment.yml)
+   configuration file:
 
    ```bash
-   pytest tests --accepted=data/accepted.txt
+   conda env create -f environment.yml
+   ```
+4. Activate the conda environment via
+   ```bash
+   conda activate climate12k
    ```
 
-You can add as many lines (i.e. test nodeids) to this file as you like.
-
+Further installation instructions to run the notebooks can be found
+in the corresponding [README](notebooks/README.md).
 
 ## Running jupyter notebooks
-With the activated conda environment (see above), you should install the
-ipython kernel via
 
-```bash
-python -m ipykernel install --user
-```
+You can run the notebooks on a remote server (without the need of installing
+any packages), or offline. Please head over to the
+[notebooks directory][notebooks] for more information on this.
 
-to make sure that the notebook server uses the correct environment.
+The notebooks in this repository are:
 
-Then start the notebook server via
+- [get-temperature-data.ipynb](notebooks/get-temperature-data.ipynb) to
+  download the LiPD files and combine the temperature series in the data base
+- [run-climate12k-tests.ipynb](notebooks/run-climate12k-tests.ipynb) to run
+  the automated tests for the database
 
-```bash
-jupyter notebook
-```
 
-which will open your browser and let you run the corresponding notebook.
+## Running the tests
+Automated tests are defined in the [tests](tests) directory. You can
+run these tests with the [run-climate12k-tests.ipynb](notebooks/run-climate12k-tests.ipynb)
+or by following the [instructions to run the tests](tests/README.md).
+
+
+## Contributing and giving feedback
+
+We very much welcome your contributions and appreciate any feedback on the
+analysis scripts and tests. Please head over to the
+[contributing guide](CONTRIBUTING.md) and let us know your feedback throug
+a new [issue](https://github.com/Chilipp/Climate-12K-Analysis/issues) or
+via mail to [philipp.sommer@unil.ch](mailto:philipp.sommer@unil.ch).
