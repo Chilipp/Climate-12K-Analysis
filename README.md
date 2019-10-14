@@ -66,5 +66,5 @@ or by following the [instructions to run the tests](tests/README.md).
 We very much welcome your contributions and appreciate any feedback on the
 analysis scripts and tests. Please head over to the
 [contributing guide](CONTRIBUTING.md) and let us know your feedback throug
-a new [issue](https://github.com/Chilipp/Temperature12K-Analysis/issues) or
+a new [issue](https://github.com/Chilipp/Temperature12K-Tests/issues) or
 via mail to [philipp.sommer@unil.ch](mailto:philipp.sommer@unil.ch).
