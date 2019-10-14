@@ -1,6 +1,8 @@
 # Temperature12K-Tests
 
-Test scripts for Temperature12K
+Test scripts for the Temperature12K database
+
+Version: 0.39.0
 
 This repository contains an automated test suite for the Temperature12K
 database. You can run the tests in this repository on a remote server using
