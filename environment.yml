@@ -1,6 +1,12 @@
-name: climate12k
+name: temperature12k
+channels:
+    - conda-forge
 dependencies:
     - python=3.7
+    - r-kohonen
+    - psyplot
+    - psy-maps
+    - rpy2 
     - pandas
     - pyqt  # necessary for lipd...
     - pip

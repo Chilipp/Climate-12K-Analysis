@@ -38,13 +38,13 @@ open a new issue and include a link to the original issue in the body of your ne
 ### Pull Requests
 
 New contributions are added to this repository through Github pull requests. Make a
-[fork of this repository](https://github.com/Chilipp/Climate12K-Analysis/fork) to your own Github account
+[fork of this repository](https://github.com/Chilipp/Temperature12K-Analysis/fork) to your own Github account
 and then create a new pull request with the necessary changes.
 
 Please make sure that you
 
 * Document new code based on the [Documentation Styleguide](#documentation-styleguide)
-* End all files with a newline and follow the [PEP8](https://www.python.org/dev/peps/pep-0008/), e.g. by using [flake8](https://pypi.org/project/flake8/)
+* End all python files with a newline and follow the [PEP8](https://www.python.org/dev/peps/pep-0008/), e.g. by using [flake8](https://pypi.org/project/flake8/)
 
 ### Adding new tests
 
@@ -120,7 +120,7 @@ def test_has_publication(
 
 
 ### Adding new analysis notebooks
-We want to make the Climate12K database more accessible so we very much welcome
+We want to make the Temperature12K database more accessible so we very much welcome
 contributions to play around with the data!
 
 New notebooks should be created in the [notebooks](notebooks) directory and

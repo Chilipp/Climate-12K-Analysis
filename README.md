@@ -1,17 +1,16 @@
-# Climate12K-Analysis
-Analysis scripts for Climate12K
+# Temperature12K-Tests
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master)
+Test scripts for Temperature12K
 
-This repository contains an automated test suite for the Climate12K database
-and several other analysis notebooks. You can run the analysis scripts in this
-repository on a remote server using mybinder
+This repository contains an automated test suite for the Temperature12K
+database. You can run the tests in this repository on a remote server using
+mybinder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master)
 
 without the need to install anything. Just head over to
 
-https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master
+https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master
 
 The following sections describe the other contents of this repository.
 
@@ -34,7 +33,7 @@ following steps:
    ```
 4. Activate the conda environment via
    ```bash
-   conda activate climate12k
+   conda activate temperature12k
    ```
 
 Further installation instructions to run the notebooks can be found
@@ -50,13 +49,13 @@ The notebooks in this repository are:
 
 - [get-temperature-data.ipynb](notebooks/get-temperature-data.ipynb) to
   download the LiPD files and combine the temperature series in the data base
-- [run-climate12k-tests.ipynb](notebooks/run-climate12k-tests.ipynb) to run
+- [run-temperature12k-tests.ipynb](notebooks/run-temperature12k-tests.ipynb) to run
   the automated tests for the database
 
 
 ## Running the tests
 Automated tests are defined in the [tests](tests) directory. You can
-run these tests with the [run-climate12k-tests.ipynb](notebooks/run-climate12k-tests.ipynb)
+run these tests with the [run-temperature12k-tests.ipynb](notebooks/run-temperature12k-tests.ipynb)
 or by following the [instructions to run the tests](tests/README.md).
 
 
@@ -65,5 +64,5 @@ or by following the [instructions to run the tests](tests/README.md).
 We very much welcome your contributions and appreciate any feedback on the
 analysis scripts and tests. Please head over to the
 [contributing guide](CONTRIBUTING.md) and let us know your feedback throug
-a new [issue](https://github.com/Chilipp/Climate12K-Analysis/issues) or
+a new [issue](https://github.com/Chilipp/Temperature12K-Analysis/issues) or
 via mail to [philipp.sommer@unil.ch](mailto:philipp.sommer@unil.ch).

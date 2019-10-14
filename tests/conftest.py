@@ -240,7 +240,7 @@ def pytest_sessionfinish(session):
     total_failures['Total'] = total_failures.sum(axis=1)
 
     general_help = dedent("""
-        Welcome! This test report for the Climate12K database extracs some
+        Welcome! This test report for the Temperature12K database extracs some
         information to make the database more accessible.
 
         The Summary sheet shows some general statistics about how many

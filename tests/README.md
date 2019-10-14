@@ -1,9 +1,9 @@
-# Testing the Climate12K database
+# Testing the Temperature12K database
 
 ## Running the tests
 You can either run the tests online on a remote server with mybinder.org
 
-https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master?filepath=notebooks/run-climate12k-tests.ipynb
+https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master?filepath=notebooks/run-temperature12k-tests.ipynb
 
 or on your local machine. For the latter, make sure you followed the
 [installation instructions for this repository](../README.md#installation).
@@ -65,6 +65,6 @@ You can add as many lines (i.e. test nodeids) to this file as you like.
 
 
 ## Adding new tests
-We very much welcome tests for the Climate12K database! Please head over to our
+We very much welcome tests for the Temperature12K database! Please head over to our
 [contributing guide](../CONTRIBUTING.md#adding-new-tests) to learn more about
 the test framework.

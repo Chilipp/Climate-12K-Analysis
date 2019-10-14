@@ -1,4 +1,4 @@
-"""Test module for the Climate12K data"""
+"""Test module for the Temperature12K data"""
 import lipd
 import shutil
 import os

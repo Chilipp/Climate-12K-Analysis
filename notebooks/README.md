@@ -1,9 +1,9 @@
-# Jupyter notebooks for Climate12K
+# Jupyter notebooks for Temperature12K
 
 This directory contains a collection of Jupyter notebooks that can be run to
-analyse the Climate12K database. You can either run them online using mybinder
+analyse the Temperature12K database. You can either run them online using mybinder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master)
 
 or offline on your local computer. More information about jupyter notebooks in
 general can be found at https://jupyter.org.
@@ -12,7 +12,7 @@ general can be found at https://jupyter.org.
 You can run the [notebooks](notebooks) online through mybinder.org by clicking
 here:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Climate12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master)
 
 Any results that you produce, however, will not be stored unless you download
 them afterwards.
@@ -42,6 +42,6 @@ More information
 
 ## Adding new analysis
 We very much welcome contributions with further analysis scripts for the
-Climate12K database! Please head over to our
+Temperature12K database! Please head over to our
 [contributing guide](../CONTRIBUTING.md#adding-new-analysis-notebooks) to
 learn more.
