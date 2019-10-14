@@ -8,11 +8,11 @@ This repository contains an automated test suite for the Temperature12K
 database. You can run the tests in this repository on a remote server using
 mybinder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Tests/master)
 
 without the need to install anything. Just head over to
 
-https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master
+https://mybinder.org/v2/gh/Chilipp/Temperature12K-Tests/master
 
 The following sections describe the other contents of this repository.
 

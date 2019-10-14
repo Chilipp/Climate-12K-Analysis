@@ -3,7 +3,7 @@
 This directory contains a collection of Jupyter notebooks that can be run to
 analyse the Temperature12K database. You can either run them online using mybinder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Tests/master)
 
 or offline on your local computer. More information about jupyter notebooks in
 general can be found at https://jupyter.org.
@@ -12,7 +12,7 @@ general can be found at https://jupyter.org.
 You can run the [notebooks](notebooks) online through mybinder.org by clicking
 here:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Analysis/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Chilipp/Temperature12K-Tests/master)
 
 Any results that you produce, however, will not be stored unless you download
 them afterwards.

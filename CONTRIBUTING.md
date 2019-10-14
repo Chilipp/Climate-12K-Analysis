@@ -38,7 +38,7 @@ open a new issue and include a link to the original issue in the body of your ne
 ### Pull Requests
 
 New contributions are added to this repository through Github pull requests. Make a
-[fork of this repository](https://github.com/Chilipp/Temperature12K-Analysis/fork) to your own Github account
+[fork of this repository](https://github.com/Chilipp/Temperature12K-Tests/fork) to your own Github account
 and then create a new pull request with the necessary changes.
 
 Please make sure that you
